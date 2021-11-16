@@ -5,7 +5,7 @@ const NoteNew = (props) => {
     return (
         <div>
             <h1>New Note Form:</h1>
-            <form>
+            <form action="/notes" method="post">
                 <p>Note Title</p>
                 <input name="note[title]" />
                 <p>Note Description</p>
