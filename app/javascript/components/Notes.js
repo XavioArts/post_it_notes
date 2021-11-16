@@ -13,7 +13,13 @@ const Notes = (props) => {
             );
         });
     };
-    return <p>Notes - {renderNotes()}</p>;
+    return (
+        <div>
+            <p>- Notes -</p>
+            <a href="/notes/new">Make a New Note</a>
+            <p>{renderNotes()}</p>
+        </div>
+    );
 };
 
 export default Notes;
